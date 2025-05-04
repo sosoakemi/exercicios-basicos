@@ -5,11 +5,9 @@ function calcularVolumeEsfera(raio) {
     return volume;
 }
 
-// Leitura do valor do raio
 const raio = parseFloat(prompt("Digite o valor do raio da esfera:"));
 
 // Cálculo do volume
 const volume = calcularVolumeEsfera(raio);
 
-// Saída formatada do resultado
 console.log(`VOLUME = ${volume.toFixed(3)}`); //
