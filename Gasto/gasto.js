@@ -1,16 +1,12 @@
-// Função para calcular litros gastos
-function calcularLitrosGastos(tempo, velocidade) {
-    const consumo = 12; // km/L
-    const distancia = tempo * velocidade; 
-    const litrosGastos = distancia / consumo; 
-    return litrosGastos.toFixed(3); 
-}
-// Função principal para receber entrada e exibir resultado
-function main() {
-    const entrada = [10, 85]; 
-    const [tempo, velocidade] = entrada; 
-    const litros = calcularLitrosGastos(tempo, velocidade);
-    console.log(litros); 
+function litrosNecessarios(tempo, velocidade) {
+    let distancia = tempo * velocidade
+    let litros = distancia / 12
+    return litros
 }
 
-main();
+let litrosNecessarios1 = litrosNecessarios(10, 85)
+let litrosNecessarios2 = litrosNecessarios(2, 92)
+let litrosNecessarios3 = litrosNecessarios(22, 67)
+console.log(`${litrosNecessarios1.toFixed(3)}`)
+console.log(`${litrosNecessarios2.toFixed(3)}`)
+console.log(`${litrosNecessarios3.toFixed(3)}`)
